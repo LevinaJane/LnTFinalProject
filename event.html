@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuddingFest | Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="">PuddingFest</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<section id="event">
+    <div class="kolom">
+        <h3 class="deskripsi">Event</h3>
+        <h4>Rangkaian Acara</h4>
+        <table border="1" cellspacing="0" cellpadding="8">
+            <tr>
+                <td>1 | Opening</td>
+                <td>Kata pembuka dari CEO PT Meksiko</td>
+            </tr>
+            <tr>
+                <td>2 | Total Techno</td>
+                <td>Presentasi dari Total Techno</td>
+            </tr>
+            <tr>
+                <td>3 | Mitra Teknologi</td>
+                <td>Presentasi dari Mitra Teknologi</td>
+            </tr>
+            <tr>
+                <td>4 | Techness Group</td>
+                <td>Presentasi dari Techness Group</td>
+            </tr>
+            <tr>
+                <td>5 | Break</td>
+                <td>Istirahat</td>
+            </tr>
+            <tr>
+                <td>6 | Living Earth</td>
+                <td>Presentasi dari Living Earth</td>
+            </tr>
+            <tr>
+                <td>7 | Gojek</td>
+                <td>Presentasi dari Gojek</td>
+            </tr>
+            <tr>
+                <td>8 | Google</td>
+                <td>Presentasi dari Google</td>
+            </tr>
+            <tr>
+                <td>9 | Closing</td>
+                <td>Penutupan acara</td>
+            </tr>
+        </table>
+
+        <h4>Pembicara Event Sebelumnya</h4>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+
+                <div class="slide first">
+                    <img src="KhoirulAnwar.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="AnantyaVanBronckhorst.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="MuhaiminIqbal.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="RyanGondokusumo.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="RiniSugianto.jpg" alt="">
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+        </div>
+        <h4>Timeline Acara</h4>
+        <table border="1" cellspacing="0" cellpadding="8">
+            <tr>
+                <td>07.00 - 07.30</td>
+                <td>Opening</td>
+            </tr>
+            <tr>
+                <td>07.30 - 09.00</td>
+                <td>Total Techno</td>
+            </tr>
+            <tr>
+                <td>09.00 - 10.30</td>
+                <td>Mitra Teknologi</td>
+            </tr>
+            <tr>
+                <td>10.30 - 12.00</td>
+                <td>Techness Group</td>
+            </tr>
+            <tr>
+                <td>12.00 - 13.00</td>
+                <td>Break</td>
+            </tr>
+            <tr>
+                <td>13.00 - 14.30</td>
+                <td>Living Earth</td>
+            </tr>
+            <tr>
+                <td>14.30 - 16.00</td>
+                <td>Gojek</td>
+            </tr>
+            <tr>
+                <td>16.00 - 17.30</td>
+                <td>Google</td>
+            </tr>
+            <tr>
+                <td>17.00 - 17.30</td>
+                <td>Closing</td>
+            </tr>
+        </table>
+        <h4>Form Registrasi</h4>
+    
+        <div class="wrapform">
+            <div class="titleform">Registration Form</div>
+            <div class="formm">
+                <form action="">
+                    <label for="email">Email </label>
+                    <input type="email" id="email">
+                    <div class="error" id="erroremail"></div>
+                    <br>
+            
+                    <label for="nama">Nama </label>
+                    <input type="text" id="nama">
+                    <div class="error" id="errornama"></div>
+                    <br>
+                    
+                    <label for="notelp">Nomor telepon </label>
+                    <input type="text" id="notelp">
+                    <div class="error" id="errornotelp"></div>
+                    <br>
+                    
+                    <label for="event">Event yang Diikuti</label>
+                    <div class="custom_select" id="event">
+                        <select>
+                            <option value="">Select</option>
+                            <option value="">Total Techno</option>
+                            <option value="">Mitra Teknologi</option>
+                            <option value="">Techness Group</option>
+                            <option value="">Living Earth</option>
+                            <option value="">Gojek</option>
+                            <option value="">Google</option>
+                        </select>
+                    </div>
+                    <br>
+                    
+                    <button type="submit" id="submit" onclick="return validate()">Submit</button>
+            </div>
+        </div>
+    
+
+    </form>
+    <script src="script.js"></script>
+
+    </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.22.0/firebase.js%22%3E</script>
+</body>
+</html>
+
+
